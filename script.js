@@ -1,7 +1,9 @@
 function updateCalendar() {
     const now = new Date();
-    const month = now.toLocaleString('fr-FR', { month: 'long' });
+    let month = now.toLocaleString('fr-FR', { month: 'long' });
     const day = now.getDate();
+
+    month = month.charAt(0).toUpperCase() + month.slice(1);
 
 
     document.getElementById('month').textContent = month;
@@ -26,3 +28,13 @@ updateCalendar();
 updateTime();
 setInterval(updateCalendar, 3600000); // Update calendar every hour
 setInterval(updateTime, 1000); // Update time every second  
+
+document.addEventListener('DOMContentLoaded', () => {
+  let closeButton = document.getElementById('closeButton');
+ 
+  closeButton.addEventListener('click', () => {
+    // Use the exposed electronAPI to send a message to the main process
+    console.log('Close button clicked');
+    window.electronAPI.closeApp();
+  });
+});
