@@ -1,0 +1,27 @@
+{
+  "name": "crispy-sniffle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helra/crispy-sniffle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Helra/crispy-sniffle/issues"
+  },
+  "homepage": "https://github.com/Helra/crispy-sniffle#readme",
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.4"
+  },
+  "dependencies": {
+    "electron": "^42.3.3"
+  }
+}

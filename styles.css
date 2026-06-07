@@ -1,0 +1,48 @@
+* {
+  box-sizing: borderless;
+}
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(248, 175, 215);
+  
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+.calendar, .time {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#month {
+  font-size: 34px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#day {
+  font-size: 54px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
