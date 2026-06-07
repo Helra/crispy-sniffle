@@ -1,5 +1,5 @@
 * {
-  box-sizing: borderless;
+  box-sizing: border-box;
 }
 
 
@@ -7,36 +7,95 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-
-  background-color: rgb(248, 175, 215);
-  
   user-select: none;
   -webkit-app-region: drag;
+  border-radius: 20px;
+  margin: 0;
+  background: transparent;
 }
 
-.calendar, .time {
-  padding: 16px;
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.0625rem;
+
+
+  background-image: url("assets/app_background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.85;
+}
+
+.calendar {
+  display: flex;
+  height: 11.5625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-image: url("assets/calendar_background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.time {
+  display: flex;
+  width: 11.5625rem;
+  height: 2.875rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-image: url("assets/clock_background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#time-value {
+  font-size: 2.5em;
+  width: 11.5625rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.2rem 0rem;
+  font-family: "Pixeboy";
+  color: #27293F;
+
 }
 
 #month {
-  font-size: 34px;
-  width: 100vw;
+  font-size: 2.5em;
+  width: 11.5625rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-family: "Pixelify Sans";
+  font-weight: "Regular";
+  color: #27293F;
 
 }
 
 #day {
-  font-size: 54px;
-  width: 100vw;
+  font-size: 7em;
+  width: 11.5625rem;
+  height: 2.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  padding-top: 2rem;
+
+  font-family: "Pixeboy";
+  color: #27293F;
 }
 
 button,
