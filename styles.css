@@ -31,13 +31,26 @@ body {
   opacity: 0.85;
 }
 
+#closeButton {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  
+  width: 12px;
+  height: 12px;
+  background-color: #E5EAFF;
+  border-radius: 50%;
+  border: 0px solid #E5EAFF;
+  
+}
+
 .calendar {
   display: flex;
   height: 11.5625rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
   background-image: url("assets/calendar_background.png");
   background-size: contain;
@@ -73,14 +86,14 @@ body {
 }
 
 #month {
-  font-size: 2.5em;
+  font-size: 1.9em;
   width: 11.5625rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   font-family: "Pixelify Sans";
-  font-weight: "Regular";
+  font-weight: bold;
   color: #27293F;
 
 }
