@@ -1,5 +1,6 @@
 {
   "name": "crispy-sniffle",
+  "productName": "Crispy Sniffle Calendar",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -19,7 +20,7 @@
   },
   "homepage": "https://github.com/Helra/crispy-sniffle#readme",
   "devDependencies": {
-    "@electron/rebuild": "^4.0.4"
+    "@electron/packager": "^20.0.1"
   },
   "dependencies": {
     "electron": "^42.3.3"
